@@ -104,14 +104,15 @@ let video = document.createElement("video");
 
             // totalAssist.innerHTML = '';
 
-            totalAssist.innerHTML += `
+            totalAssist.innerHTML = `
 
-                  <p class="card-text">Hoy llegaron ${assistence} de 52</p>`}
+          <p class="card-text">Hoy llegaron <br>  ${assistence} </br>  de 52</p>`}
         });
 
        })
 
-      } else {
+
+     }else {
         todayAsistenceRef.set({
           students: [{name:studentName, date: Date.now()}]
         });
